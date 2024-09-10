@@ -1,0 +1,13 @@
+.tab {
+  font: var(--font-normal-14);
+  width: 109px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.isActive {
+  color: var(--active-color);
+  border-bottom: 2px solid var(--active-color);
+}

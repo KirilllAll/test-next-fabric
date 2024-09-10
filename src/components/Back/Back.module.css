@@ -1,0 +1,17 @@
+.back {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-left: var(--spacing-md);
+  height: 56px;
+}
+
+.pageName {
+  font: var(--font-regular-18);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}

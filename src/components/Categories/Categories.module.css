@@ -1,0 +1,48 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-sm);
+  grid-template-areas:
+    'selected selected'
+    'dvsa express'
+    'hazard signs'
+    'multiplayer multiplayer';
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-sm);
+  border-radius: 20px;
+}
+
+.selected {
+  grid-area: selected;
+}
+
+.dvsa {
+  grid-area: dvsa;
+}
+.express {
+  grid-area: express;
+}
+.hazard {
+  grid-area: hazard;
+}
+.signs {
+  grid-area: signs;
+}
+.multiplayer {
+  grid-area: multiplayer;
+}
+
+.small {
+  width: 100%;
+  height: 72px;
+}
+
+.medium {
+  width: 100%;
+  height: 72px;
+}

@@ -1,0 +1,12 @@
+.scale {
+  width: 100%;
+  max-width: 37px;
+  height: 6px;
+  border-radius: 5px;
+  opacity: 0.1;
+  background-color: var(--green);
+}
+
+.active {
+  opacity: 1;
+}

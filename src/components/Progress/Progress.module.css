@@ -1,0 +1,8 @@
+.bar {
+  display: flex;
+  gap: 3px;
+}
+
+.text {
+  font: var(--font-normal-14);
+}

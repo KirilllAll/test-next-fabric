@@ -1,0 +1,35 @@
+.selected {
+  width: 100%;
+  height: 156px;
+  border-radius: 20px;
+  padding: var(--spacing-l);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.selected {
+  grid-area: selected;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lestSideContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-l);
+}
+
+.sectionName {
+  font: var(--font-regular-20);
+  color: var(--text-color);
+}
+
+.categoryName {
+  font: var(--font-normal-14);
+  color: var(--gray);
+}

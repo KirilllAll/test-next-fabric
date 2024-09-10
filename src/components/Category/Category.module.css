@@ -1,0 +1,9 @@
+.category {
+  display: flex;
+  justify-content: flex-start;
+  padding: var(--spacing-l) 12px;
+}
+
+.text {
+  font: var(--font-regular-16);
+}

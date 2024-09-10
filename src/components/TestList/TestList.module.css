@@ -1,0 +1,5 @@
+.testList {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 71px));
+  gap: var(--spacing-md) var(--spacing-md);
+}

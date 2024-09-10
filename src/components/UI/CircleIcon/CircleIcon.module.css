@@ -1,0 +1,61 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.icon {
+  position: relative;
+  z-index: var(--zIndex-sm);
+}
+
+.small {
+  min-width: 40px;
+  height: 40px;
+}
+
+.medium {
+  min-width: 58px;
+  height: 58px;
+}
+
+.large {
+  min-width: 71px;
+  height: 71px;
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
+.violet {
+  background-color: var(--violet);
+}
+
+.pink {
+  background-color: var(--pink);
+}
+
+.light {
+  background-color: var(--light);
+}
+
+.default {
+  background-color: var(--background);
+}
+
+.opacity {
+  opacity: var(--opacity-lg);
+}

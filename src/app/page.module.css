@@ -1,0 +1,9 @@
+.page {
+  background-color: var(--main-background);
+  max-width: 360px;
+  width: 100%;
+}
+
+.main {
+  padding: var(--spacing-l) var(--spacing-md) var(--spacing-xl) var(--spacing-md);
+}
