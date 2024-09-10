@@ -45,8 +45,6 @@ Start the Production Server
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) or [http://localhost:3001](http://localhost:3001) with your browser to see the result. You will see correctly link in your terminal
-
 Deployment on Vercel
 
 Install Vercel CLI
@@ -56,3 +54,7 @@ npm install -g vercel
 
 vercel
 ```
+
+## Open in Dev Mode
+
+[http://localhost:3000](http://localhost:3000) or [http://localhost:3001](http://localhost:3001) with your browser to see the result. You will see correctly link in your terminal

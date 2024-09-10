@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC } from 'react';
 import styles from './CircleIcon.module.css';
 import Image from 'next/image';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';

@@ -4,4 +4,4 @@ export type DataItem = {
   value: number;
 };
 
-export type LSKeys = 'progress' | 'amount';
+export type SessionKeys = 'progress' | 'amount';

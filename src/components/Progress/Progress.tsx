@@ -1,11 +1,11 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import styles from "./Progress.module.css";
+'use client';
+import React, { useEffect, useState } from 'react';
+import styles from './Progress.module.css';
 
-import { SCALES_NUMS } from "./const";
-import Scale from "../Scale/Scale";
+import { SCALES_NUMS } from './const';
+import Scale from '../Scale/Scale';
 
-import { getProgressResult, getValuesFromLS } from "./utils";
+import { getProgressResult, getValuesFromSessionStorage } from './utils';
 
 interface InitialState {
   progressValue: number;
@@ -25,7 +25,7 @@ const Progress = () => {
   const { progressValue, amount, result } = progress;
 
   useEffect(() => {
-    const [progressValue, amount] = getValuesFromLS(["progress", "amount"]);
+    const [progressValue, amount] = getValuesFromSessionStorage(['progress', 'amount']);
 
     setProgress((prev) => ({
       ...prev,
@@ -38,8 +38,9 @@ const Progress = () => {
   return (
     <>
       <p className={styles.text}>
-        {progressValue} questions out of {amount} passed
+        {progressValue} questions out of {amount || 'amount'} passed
       </p>
+
       <div className={styles.bar}>
         {SCALES_NUMS.map((item) => {
           return <Scale key={item} isActive={item <= result} />;
