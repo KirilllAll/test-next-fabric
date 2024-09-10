@@ -1,32 +1,16 @@
 .item {
   position: relative;
-  width: 71px;
-  height: 71px;
-  background-color: var(--background);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  box-shadow: 0px 0px 4px 0px var(--shadow);
   cursor: pointer;
-}
-
-.item:hover {
-  background-color: var(--main-background);
-  border: 1px solid var(--background);
-}
-
-.item::after {
-  content: '';
-  position: absolute;
   width: 71px;
   height: 71px;
-  z-index: 2;
 }
 
 .num {
+  position: absolute;
+  z-index: var(--zIndex-md);
   font: var(--font-normal-18);
 }
 
@@ -42,4 +26,7 @@
 
 .icon.completed {
   display: block;
+}
+.filter {
+  filter: drop-shadow(1px 1px 4px var(--shadow));
 }

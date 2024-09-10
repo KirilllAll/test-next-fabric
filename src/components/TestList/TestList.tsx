@@ -9,9 +9,9 @@ const TestList = () => {
 
   const handleQuestionClick = (event: React.MouseEvent<HTMLUListElement>) => {
     const target = event.target as HTMLElement;
-
-    if (target.tagName === 'LI') {
-      const questionId = target.id;
+    const listItem = target.closest('li');
+    if (listItem) {
+      const questionId = listItem.id;
       const updatedQuestions = [...data];
       const index = updatedQuestions.findIndex((q) => q.id === questionId);
 
